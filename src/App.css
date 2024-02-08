@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+
+  /*scrollbar edit*/
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #32a852; 
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #32a852; 
+  }
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+body {
+  background: var(--color-bg);
+}
+.gradient__bg 
+{
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 12% 33%, rgba(49, 127, 53, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 12% 33%, rgba(49, 127, 53, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 12% 33%, rgba(49, 127, 53, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 12% 33%, rgba(49, 127, 53, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 12% 33%, rgba(49, 127, 53, 1) 0%, rgba(4, 12, 24, 1) 100%);
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.section__padding {
+  padding: 2rem 4rem;
+}
+
+.gradient__text {
+  color: #d4fb50; 
+  background-image: -webkit-linear-gradient(0deg, #d4fb50 0%, #eea8fb 50%, #f7d488 100%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
+}

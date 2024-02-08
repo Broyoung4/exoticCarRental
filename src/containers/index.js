@@ -1,0 +1,10 @@
+export { default as About } from './about/About';
+export { default as Banner } from './banner/Banner';
+export { default as BookCar } from './bookcar/BookCar';
+export { default as CarPick } from './carpick/CarPick';
+export { default as ChooseUs } from './chooseus/ChooseUs';
+export { default as Download } from './download/Download';
+export { default as Faq } from './faq/Faq';
+export { default as Footer } from './footer/Footer';
+export { default as Header } from './header/Header';
+export { default as Reviews } from './reviews/Reviews';

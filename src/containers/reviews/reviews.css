@@ -1,0 +1,124 @@
+
+
+.cr__reviews {
+  /* background-color: seagreen; */
+  color: var(--color-text);
+}
+
+.cr__reviews-content {
+  display: flex;
+  flex-direction: column;
+}
+.cr__reviews-content__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 70rem;
+    margin-bottom: 5rem;
+}
+.cr__reviews-content__title h4 {
+      font-size: 1.5rem;
+      font-family: var(--font-family1);
+      font-weight: 500;
+      color: seagreen;
+    }
+
+.cr__reviews-content__title h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.4rem;
+      color: seagreen;
+    }
+
+.cr__reviews-content__title p {
+      font-size: 1rem;
+      font-family: var(--font-family3);
+      line-height: 1.4;
+    }
+
+.cr__all-reviews {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+}
+  
+
+.cr__all-reviews__box {
+    background-color: #776e6e;
+    box-shadow: 0 20px 40px 0 rgb(0 0 0 / 8%);
+    width: 54rem;
+    padding: 3.5rem;
+    position: relative;
+  border-radius: 10px;
+}
+
+
+.cr__all-reviews__box p {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+.cr__all-reviews__box__name {
+      display: flex;
+}
+.cr__all-reviews__box__name__profile {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 3rem;
+}
+.cr__all-reviews__box__name__profile img {
+          width: 7rem;
+          height: 7rem;
+          border-radius: 50%;
+        }
+
+.cr__all-reviews__box__name__profile h4 {
+          font-size: 1.6rem;
+        }
+
+.cr__all-reviews__box__name__profile p {
+          font-size: 1rem;
+          font-family: var(--font-family3);
+          font-weight: 400;
+        }
+ 
+
+.quotes-icon {
+  font-size: 3.5rem;
+  position: absolute;
+  bottom: 33px;
+  right: 60px;
+}
+
+
+
+
+
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .cr__all-reviews {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .cr__all-reviews__box {
+    max-width: 20rem;
+}
+.cr__faq-box p {
+  font-size: 1rem;
+}
+.cr__all-reviews__box p {
+  font-size: 1rem;
+}
+.cr__all-reviews__box__name__profile h4 {
+  font-size: 1.2rem;
+}
+.quotes-icon {
+  font-size: 2rem;
+}
+}

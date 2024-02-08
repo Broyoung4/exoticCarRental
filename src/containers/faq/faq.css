@@ -1,0 +1,137 @@
+.cr__faq {
+  background-image: url("src/assets/car2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+}
+
+.cr__faq-content {
+  display: flex;
+  flex-direction: column;
+  color: seagreen;
+}
+
+.cr__faq-content__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 80rem;
+  line-height: 1.5;
+}
+.cr__faq-content__title h5 {
+  font-size: 1.2rem;
+}
+
+.faq-content__title h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.7rem;
+}
+
+.cr__faq-content__title p {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.cr__all-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.cr__faq-box {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+  background-color: grey;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  width: 55rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.cr__faq-box__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%);
+  padding: 14px;
+  transition: 0.15s ease;
+}
+.cr__faq-box p {
+  font-family: var(--font-family);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.cr__faq-box__answer {
+  font-size: 1.1rem;
+  font-family: var(--font-family1);
+  color: black;
+  line-height: 1.7;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+  padding: 0 3rem;
+}
+
+.cr__active-answer {
+  max-height: 20rem;
+  padding: 1.8rem 3rem;
+  transition: 0.4s ease;
+}
+
+.cr__active-question {
+  background-color: seagreen;
+  color: grey;
+  box-shadow: 0 10px 15px 0 rgb(103 235 52 / 35%);
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cr__faq-box {
+    width: 40rem;
+  }
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .cr__faq-content__title {
+    max-width: 20rem;
+    line-height: 1.5;
+  }
+  .cr__faq-box {
+    width: 15rem;
+  }
+  .cr__faq {
+    /* background-image: none; */
+  }
+  .cr__all-reviews__box__name__profile img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .cr__faq-content__title {
+    max-width: 20rem;
+    line-height: 1.5;
+  }
+  .cr__faq-box {
+    width: 18rem;
+  }
+  .cr__faq {
+    /* background-image: none; */
+  }
+
+  .cr__all-reviews__box__name__profile img {
+    width: 2rem;
+    height: 2rem;
+  }
+}

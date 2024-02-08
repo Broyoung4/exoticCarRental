@@ -1,0 +1,135 @@
+.cr__header {
+  display: flex;
+}
+.cr__button-link {
+  color: red;
+}
+.cr__header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cr__header-container-left {
+  flex: 1;
+}
+.cr__header-title h1,.cr__header-title h3, .cr__header-title p {
+  margin: 1.5rem 0;
+  font-family: var(--font-family);
+}
+
+.cr__header-title h1 {
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  text-transform: 
+}
+.cr__header-title h3 {
+  font-family: var(--font-family2);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 27px;
+  color: #c3f0bd;
+
+}
+.cr__header-title p {
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #c3f0bd;
+
+}
+
+.cr__header-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cr__header-img img {
+  height: 100%;
+  width: 100%;
+}
+.cr__header-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.cr__header-buttons .cr__header-button {
+  flex: 0.6;
+  text-align: center;
+ /*  width: 100%; */
+  margin-top: 20px;
+  /* min-width: 20px; */
+  min-height: 50px;
+  background: #FF4820;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 1rem;
+  border: none;
+}
+
+.headerSymbol {
+  color: #fff;
+  font-size: 20px;
+}
+.headerSymbol:hover  {
+  color: inherit;
+}
+.cr__header-buttons button:last-child {
+  background: #000;
+}
+
+.cr__header-buttons .cr__header-button:hover {
+  background: #fff;
+  color: #FF4820;
+  border: 1px solid #FF4820;
+}
+
+.cr__header-buttons button:last-child:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.scroll_icon {
+  color: #fff;
+  font-size: 30px;
+  position: fixed;
+  right: 15px;
+  background-color: #ff4820;
+}
+
+
+@media screen and (max-width: 768px) {
+  .cr__header {
+    flex-direction: column;
+  }
+  .cr__header-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cr__header-container-left {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .cr__header-img {
+    display: none;
+  }
+  .cr__header-buttons .cr__header-button {
+    font-size: 15px;
+  }
+}

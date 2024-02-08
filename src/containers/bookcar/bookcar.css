@@ -1,0 +1,389 @@
+.cr__bookcar {
+  margin: 0 auto;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+
+.cr__bookcar-container {
+  padding: 2rem;
+  box-shadow: 2px 2px 12px 7px rgba(204,240,204,0.75);
+  -webkit-box-shadow: 2px 2px 12px 7px rgba(204,240,204,0.75);
+  -moz-box-shadow: 2px 2px 12px 7px rgba(204,240,204,0.75);
+}
+.cr__bookcar-container-form-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+}
+
+.cr__bookcar-labels {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.cr__label-select {
+  flex:1;
+}
+
+.cr__label-select select, .cr__label-select input {
+  flex: 1;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 500;
+  color: grey;
+  background-color: transparent;
+  padding: 0 1rem;
+  outline: none;
+  color-scheme: dark;
+}
+
+
+.cr__label-button {
+  margin-top: 30px;
+  flex: 2;
+}
+.cr__label-button button {
+  flex: 2;
+  width: 100%;
+  /* margin-top: 20px; */
+  min-height: 40px;
+  background: #FF4820;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 16px;
+  /* line-height: 27px; */
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 0 1rem;
+  border: none;
+}
+
+.cr__label-select label {
+  font-weight: 500;
+}
+.cr__label-select input
+{
+  ::-webkit-datetime-edit {
+    padding: 1.3rem 1.3rem;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+}
+.cr__bookcar-messages {
+  margin-top: 2rem;
+}
+
+
+.cr__bookcar-messages p {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 0.5rem 1.4rem;
+  margin-bottom: 1.8rem;
+  margin-top: -1rem;
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+
+.cr__bookcar-container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.cancel:hover {
+  cursor: pointer;
+}
+
+/* .cancelerror {
+  display: inline-block;
+}
+ */
+.cr__bookcar-modal .cr__bookcar-overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+} 
+.error-message, .booking-done {
+  display: none;
+}
+.cr__bookcar-overlay {
+  background: rgba(49,49,49,0.8);
+} 
+
+.cr__bookcar-modal-content {
+  color: black;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 2px;
+  border-radius: 3px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+ /* max-width: 600px;
+  min-width: 300px;  */
+}
+
+.cr__bookcar-modal-title
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-bg);
+  color: white;
+  align-items: center;
+}
+
+.cr__bookcar-modal-title h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cr__bookcar-modal__message {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+    background-color: #ffeae6;
+}
+
+.cr__bookcar-modal__message h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: seagreen;
+}
+
+.cr__bookcar-modal__message p {
+  font-size: 1rem;
+  color: #777777;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.cr__bookcar-modal__car-info {
+  background-color: white;
+  padding: 3rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #7777779f;
+}
+
+
+.cr__bookcar-modal__car-info__dates {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cr__bookcar-modal__car-info__dates h5,
+.cr__bookcar-modal__car-info__model h5 {
+    font-size: 1.1rem;
+    color: seagreen;
+  }
+
+.cr__bookcar-modal__car-info__dates h6 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.cr__bookcar-modal__car-info__dates p {
+  font-size: 0.8rem;
+  color: #777777;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.cr__bookcar-modal__car-info__dates span {
+    display: flex;
+    gap: 1rem;
+}
+
+.cr__bookcar-modal__car-info__model {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.cr__bookcar-modal__car-info__model img{
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  
+}
+
+.cr__bookcar-modal__car-info__model span {
+font-size: 1.1rem;
+color: #2f2f2f; 
+
+}
+
+@media (max-width: 650px) {
+  margin-top: 3.5rem;
+}
+
+
+.cr__bookcar-modal__person-info {
+  padding: 3rem 3rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column; 
+}
+
+.cr__bookcar-modal__person-info h4 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: seagreen;
+    margin-bottom: 2rem;
+  }
+
+.input-time {
+  text-align: center;
+  width: 8rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cr__info-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cr__info-form__checkbox {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1rem;
+  color: #565454;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.cr__info-form__checkbox input {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+.cr__info-form__1col {
+  grid-template-columns: 1fr !important;
+}
+
+.cr__info-form__2col,
+.cr__info-form__1col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.cr__info-form__2col span,
+.cr__info-form__1col span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cr__info-form__2col span label,
+.cr__info-form__1col span label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #777777; }
+b {
+      color: seagreen;
+    }
+
+
+.cr__info-form__2col span input,
+.cr__info-form__1col span input {
+  padding: 14px 15px;
+  background-color: #dbdbdb;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+}
+
+
+.reserve-button {
+  background-color: #dbdbdb;
+  margin: 0 -3rem;
+  padding: 3rem;
+  text-align: right;
+}
+ 
+
+.reserve-button button {
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    background-color: seagreen;
+    border: 1px solid yellow;
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.reserve-button button:hover {
+      background-color: green;
+    }
+
+.dates-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.error-modal {
+  color: seagreen;
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cr__bookcar-container-form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+  }
+  .cr__bookcar-modal-content {
+    height: 100vh;
+    max-width: 80vw;
+  }
+  .cr__info-form__2col,
+  .cr__info-form__1col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  .cr__bookcar-modal__car-info {
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .cr__bookcar-modal__car-info__model {
+    margin-top: 2rem;
+  }
+}
