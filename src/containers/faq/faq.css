@@ -1,5 +1,5 @@
 .cr__faq {
-  background-image: url("src/assets/car2.png");
+  background-image: url(/src/assets/car2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
